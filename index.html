@@ -28,7 +28,7 @@
           </ul>
           <div v-for="variant in variants" v-bind:key="variant.id">{{variant.color}}</div>
           <br>
-          <div v-for="size in sizes" :key="size.id">{{size.name}}</div>
+          <div v-for="(size,index) in sizes" :key="index">{{size}}</div>
         </div>
       </div>
     </div>
