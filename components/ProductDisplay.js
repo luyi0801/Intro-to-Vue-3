@@ -38,10 +38,10 @@ app.component('product-display', {
           v-on:click="addToCart">
           Add to Cart
         </button>
-        <review-list :reviews="reviews"></review-list>
-        <review-form @review-submitted="addReview"></review-form>
       </div>
     </div>
+    <review-list :reviews="reviews"></review-list>
+    <review-form @review-submitted="addReview"></review-form>
   </div>`,
   data() {
     return {

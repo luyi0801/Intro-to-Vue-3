@@ -12,11 +12,19 @@ app.component('review-form', {
 
         <label for="rating">Rating:</label>
         <select id="rating" v-model.number="rating">
-            <option value="">5</option>
-            <option value="">4</option>
-            <option value="">3</option>
-            <option value="">2</option>
-            <option value="">1</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+        </select>
+        <label for="rating">Rating:</label>
+        <select id="rating" v-model.number="rating">
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
         </select>
         <br>
         <input class="button" type="submit" value="Submit">
