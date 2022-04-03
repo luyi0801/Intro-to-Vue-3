@@ -10,7 +10,16 @@ const app = Vue.createApp({
             variants: [
               { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' },
               { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' },
-            ]
+            ],
+            styles: {
+                // 属性名は''で囲むとcssの属性の扱い
+                // 属性名はbackgroundColorの時はjavascriptの内容として扱われる
+                //'background-color': 'green',
+                color:'red'
+            },
+            cartStyles: {
+
+            }
         }
     },
     methods: {
